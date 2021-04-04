@@ -4,70 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New User Signup</title>
+    <title>Login To proceed.</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <form class="row g-3 mb-3">
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" >
-      </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-      <div class="col-md-8">
-        <label for="inputAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
+<body style=" background-color:  #1b2125;">
+    <div class="containe">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <h2 style="text-align: center;">Signup for a new account &copy;
+                </h2>
+                     <label for="inputName4">Full Name</label>
+                     <input type="text" class="form-control" id="inputName4" placeholder="Enter name"> 
+                     <br>
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Email">    
+                    <br>
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    <br>
+                    <label for="inputPassword4">Confirm Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Retype Password">
+                    <br>                 
+            </div>
+            <div class="col-md-4">
+                <a href="login">Already a User? Click here to login.</a>
+            </div>
         </div>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </div>
-    </form>
-  </div>
+        <div class="row">
+            <div class="col-md-5">
+               
+            </div>
+
+            <div class="col-md-7">
+                <button type="submit" class="btn btn-primary" href="admin">Sign Up & continue</button>
+                
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+              <span>All rights reserved &female;</span>
+          </div>
+        </div>
+    </div>
    <style>
-       body{
-           background-color:  #1b2125;
+       .body{
+        background-color:  #1b2125;
+       }
+       .containe{
+           
            font-family: 'Chakra Petch', sans-serif !important; 
            color: white;
            padding: 40px;
            align-items: center;
        }
-       
+       button{
+         background-color: rgb(24, 107, 120) !important;
+         
+         
+       }
    </style>
-
 </body>
 </html>
