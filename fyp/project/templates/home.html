@@ -29,13 +29,12 @@
           <div class="card bg-dark border-light" style="width: 18rem; height: 25rem;">
                 <img class="card-img-top"
                  src="https://cdn0.iconfinder.com/data/icons/snow_sabre_silver/512/folder_web_upload.png" 
-                 alt="Card image cap" style="width: 100px; height: 100px; margin-left: 100px;">
+                 alt="Card image cap" style="width: 100px; height: 100px; margin-left: 50px;">
                 <div class="card-body">
                   <h5 class="card-title">Upload file</h5>
                   <p class="card-text">Upload any .mkv/.mp4 file and let our system perform the anomaly checks for you!</p>
-                 <br><br><br> 
-                  <a href="upload" class="btn btn-primary">Upload</a>
-                  <br>
+                 
+                  <button class="btn-5" >Upload</button>                  <br>
                   <br>
                 </div>
               </div>
@@ -82,19 +81,74 @@
          justify-content: center !important;
        }
        .card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
-  cursor: pointer;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+         transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+        padding: 14px 80px 18px 36px;
+        cursor: pointer;
+       }
+
+       .card:hover{
+         transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+      }
+
+      /* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
-.card:hover{
-     transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+button {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  display: block;
+  
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 6em;
+  position: relative;
+  text-transform: uppercase;
 }
 
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #33453b;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  /*background-color: #f00;*/
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
    </style>
 </body>
 </html>
