@@ -28,38 +28,52 @@
         <div class="col-md-4 d-flex justify-content-center text-center">
           <div class="card bg-dark border-light" style="width: 18rem; height: 25rem;">
                 <img class="card-img-top"
-                 src="https://cdn0.iconfinder.com/data/icons/snow_sabre_silver/512/folder_web_upload.png" 
-                 alt="Card image cap" style="width: 100px; height: 100px; margin-left: 50px;">
+                 src="https://cdn2.iconfinder.com/data/icons/50-material-design-round-corner-style/52/Upload_2-512.png" 
+                 alt="Card image cap" style="width: 100px; height: 100px; margin-left: 75px; filter: grayscale(100%); ">
                 <div class="card-body">
                   <h5 class="card-title">Upload file</h5>
-                  <p class="card-text">Upload any .mkv/.mp4 file and let our system perform the anomaly checks for you!</p>
-                 
-                  <button class="btn-5" >Upload</button>                  <br>
+                  <hr>
+                  <p class="card-text"
+                  
+                  >Upload any .mp4 file and perform the anomaly checks in your videos!</p>
+                 <br>
+                  <button class="btn-5" style="margin-left: 25px;" >Upload</button>                
                   <br>
                 </div>
               </div>
         </div>
        
 
-        <div class="col-sm-4 d-flex justify-content-center text-center">
-          <div class="card " style="width: 18rem;">
-                <img class="card-img-top" src="https://cdn1.iconfinder.com/data/icons/F-I-P-by-Delacro/128/mp.png" alt="Card image cap">
+        <div class="col-md-4 d-flex justify-content-center text-center">
+          <div class="card bg-dark border-light" style="width: 18rem; height: 25rem;">
+                <img class="card-img-top"
+                 src="https://cdn0.iconfinder.com/data/icons/seo-smart-pack/128/grey_new_seo2-38-512.png" 
+                 alt="Card image cap" style="width: 100px; height: 100px; margin-left: 75px;">
                 <div class="card-body">
-                  <h5 class="card-title">View the Gallery</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="gallery" class="btn btn-primary">Gallery</a>
-                  <br><br>
+                  <h5 class="card-title">View Gallery</h5>
+                  <hr>
+                  <p class="card-text">View the images for the anomalies organized by category!</p>
+                 <br>
+                  <button class="btn-5" style="margin-left: 25px;" >Gallery</button>                
+                  <br>
                 </div>
               </div>
         </div>
         
-        <div class="col-sm-4 d-flex justify-content-center text-center">
-          <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-004_comment_chat-128.png" alt="Card image cap">
+        <div class="col-md-4 d-flex justify-content-center text-center">
+          <div class="card bg-dark border-light" style="width: 18rem; height: 25rem;">
+                <img class="card-img-top"
+                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/mail-2031009-1714869.png" 
+                 alt="Card image cap" style="width: 100px; height: 100px; margin-left: 75px;">
                 <div class="card-body">
                   <h5 class="card-title">Contact Us</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="contact" class="btn btn-primary">Contact</a>
+                  <hr>
+                  <p class="card-text"
+                  
+                  >Any suggestions or complaints? We are just a message away!</p>
+                 <br>
+                  <button class="btn-5" style="margin-left: 25px;" >Contact</button>                
+                  <br>
                 </div>
               </div>
         </div>
@@ -81,11 +95,14 @@
          justify-content: center !important;
        }
        .card{
-        border-radius: 4px;
+        border-radius: 15px;
         background: #fff;
         box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
          transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-        padding: 14px 80px 18px 36px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 25px;
+        padding-top: 25px;
         cursor: pointer;
        }
 
@@ -94,14 +111,15 @@
         box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
       }
 
-      /* GENERAL BUTTON STYLING */
-button,
-button::after {
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-	transition: all 0.3s;
-}
+      
+      
+        button,
+        button::after {
+       -webkit-transition: all 0.3s;
+      	-moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+      	transition: all 0.3s;
+      }
 
 button {
   background: none;
@@ -109,10 +127,7 @@ button {
   border-radius: 15px;
   color: #fff;
   display: block;
-  
-  font-weight: bold;
-  margin: 1em auto;
-  padding: 2em 6em;
+  padding: 1em 3em;
   position: relative;
   text-transform: uppercase;
 }
@@ -127,17 +142,17 @@ button::after {
 
 button:hover {
   color: #33453b;
+  font-weight: bold;
 }
 
-/* BUTTON 5 */
 .btn-5 {
   overflow: hidden;
 }
 
 .btn-5::after {
-  /*background-color: #f00;*/
   height: 100%;
-  left: -35%;
+  left: -45%;
+  right: 45%;
   top: 0;
   transform: skew(50deg);
   transition-duration: 0.6s;
