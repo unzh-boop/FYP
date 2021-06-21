@@ -22,6 +22,8 @@ admin.site.index_title = "Welcome to anomaly detection Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('login.urls'))
+    path('', include('login.urls')),
+    path('contact/', include('contactforms.urls')),
+    
 ]
 
