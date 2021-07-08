@@ -25,7 +25,7 @@ SECRET_KEY = 'h3(0#ce(o1#^o4av1qeh4uglvcke7j9riqcngcec*ue$w1bd3i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'dj-anomaly.herokuapp.com']
 
 
 # Application definition
